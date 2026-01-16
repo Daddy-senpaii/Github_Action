@@ -6,7 +6,7 @@ jobs:
   run:
     runs-on: ubuntu-24.04
     env:
-      DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      DB_PASSWORD: ${{ secrets.DBPASSWORD }}
     steps:
       - uses: actions/checkout@v4
       - run: ./app.sh
